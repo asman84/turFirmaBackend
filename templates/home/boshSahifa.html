@@ -1,0 +1,207 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Turfirma</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'slick/slick/slick.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'slick/slick/slick-theme.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700|Abril+Fatface" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css">
+</head>
+
+<body>
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <header class="w-100 sticky-head fixed-top  text-white">
+            <div class="row w-100">
+                <div class="col-3">
+                    <div class="head-text1 d-flex">
+                        <p class="m-4 h5"><i class="fas fa-envelope mr-2"></i> Subscribe</p>
+                        <p class="mt-4 ">+998 97 771 52 06</p>
+                    </div>
+                </div>
+                <div class="col-6  d-flex justify-content-center">
+                    <div class="head-text3">
+                        <h1 class="head-text3-itm mt-3 mb-3"><img class="pngg" src="{% static 'images/pnggg.png' %}"></h1>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="head-text2 d-flex justify-content-end  mt-3 mr-5">
+                        <p class="head-text2-itm"><i class="fab fa-twitter m-3 "></i></p>
+                        <p class="head-text2-itm"><i class="fab fa-instagram m-3 "></i></p>
+                        <p><i class="fab fa-linkedin-in m-3 "></i></p>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <header class=" sticky-head2 text-white fixed-top mb-2">
+            <div class="row w-100">
+                <div class="col-1"></div>
+                <div class="col-10">
+                    <ul class="sticky-head2-itm d-flex justify-content-center">
+{#                        <li class="menu-item mr-3 ml-3"><a href="">Отели</a></li>#}
+{#                        <li class="menu-item mr-3 ml-3">#}
+{#                            <a href=""> Туры</a>#}
+{#                            <ol class="sub-menu mt-2" style="margin-left: -40px;">#}
+{#                                <li class="menu-item"><a href="#0">Big Widgets</a></li>#}
+{#                                <li class="menu-item"><a href="#0">Bigger Widgets</a></li>#}
+{#                                <li class="menu-item"><a href="#0">Huge Widgets</a></li>#}
+{#                            </ol>#}
+{#                        </li>#}
+{#                        <li class="menu-item mr-3 ml-3"><a href="">Услуги</a></li>#}
+{#                        </li>#}
+{#                        <li class="menu-item mr-3 ml-3"><a href="">Новости</a></li>#}
+{#                        <li class="menu-item mr-3 ml-3"><a href="">O нас</a></li>#}
+{#                        <li class="menu-item mr-3 ml-3"><a href="">Контакты</a></li>#}
+                        {% for nav in navbar %}
+                            <li class="menu-item mr-3 ml-3"><a href="">{{ nav }}</a>
+                            <ol class="sub-menu mt-2" style="margin-left: -40px;">
+
+                                <li class="menu-item"><a href="#0">{{ navs }}</a></li>
+
+                            </ol>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                <div class="col-1"></div>
+            </div>
+        </header>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="carousel-item-word">
+                    <p class="carousel-item-text">"A hungely successful launch and the creation of
+                        <br> a global profile for our hotel"</p>
+                    <p class="carousel-item-text2">
+                        Le Grand Bellevue, Gstaad, Switzerland!
+                    </p>
+                    <p class="carousel-item-text3 mt-5">
+                        -Daniel Koetser, Owner
+                    </p>
+                </div>
+                <img src="{% static 'images/09.jpg' %}" class="d-block vw-100 vh-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <div class="carousel-item-word">
+                    <p class="carousel-item-text">"A hungely successful launch and the creation of
+                        <br> a global profile for our hotel"</p>
+                    <p class="carousel-item-text2">
+                        Le Grand Bellevue, Gstaad, Switzerland!
+                    </p>
+                    <p class="carousel-item-text3 mt-5">
+                        -Daniel Koetser, Owner
+                    </p>
+                </div>
+                <img src="{% static 'images/10.jpg' %}" class="d-block vw-100 vh-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <div class="carousel-item-word">
+                    <p class="carousel-item-text">"A hungely successful launch and the creation of
+                        <br> a global profile for our hotel"</p>
+                    <p class="carousel-item-text2">
+                        Le Grand Bellevue, Gstaad, Switzerland!
+                    </p>
+                    <p class="carousel-item-text3 mt-5">
+                        -Daniel Koetser, Owner
+                    </p>
+                </div>
+                <img src="{% static 'images/11.jpg' %}" class="d-block vw-100 vh-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <div class="carousel-item-word">
+                    <p class="carousel-item-text">"A hungely successful launch and the creation of
+                        <br> a global profile for our hotel"</p>
+                    <p class="carousel-item-text2">
+                        Le Grand Bellevue, Gstaad, Switzerland!
+                    </p>
+                    <p class="carousel-item-text3 mt-5">
+                        -Daniel Koetser, Owner
+                    </p>
+                </div>
+                <img src="{% static 'images/12.jpg' %}" class="d-block vw-100 vh-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <div class="carousel-item-word">
+                    <p class="carousel-item-text">"A hungely successful launch and the creation of
+                        <br> a global profile for our hotel"</p>
+                    <p class="carousel-item-text2">
+                        Le Grand Bellevue, Gstaad, Switzerland!
+                    </p>
+                    <p class="carousel-item-text3 mt-5">
+                        -Daniel Koetser, Owner
+                    </p>
+                </div>
+                <img src="{% static 'images/08.jpg' %}" class="d-block vw-100 vh-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <div class="carousel-item-word">
+                    <p class="carousel-item-text">"A hungely successful launch and the creation of
+                        <br> a global profile for our hotel"</p>
+                    <p class="carousel-item-text2">
+                        Le Grand Bellevue, Gstaad, Switzerland!
+                    </p>
+                    <p class="carousel-item-text3 mt-5">
+                        -Daniel Koetser, Owner
+                    </p>
+                </div>
+                <img src="{% static 'images/09.jpg' %}" class="d-block vw-100 vh-100" alt="...">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <div class="second-page bg-white h-100">
+        <div class="second-page-itm w-100 h-50">
+            <h1 class="second-page-itm-text">Brands We Work With</h1>
+            <img class="second-page-itm-img" src="{% static 'images/k4.png' %}">
+            <button class="second-page-itm-btn">Full Client list</button>
+        </div>
+        <div class="second-page2 w-100 h-50">
+            <div class="row">
+                <div class="col-4">
+                    <img src="{% static 'images/viproom.jpg' %} ">
+                </div>
+                <div class="col-4">
+                    <img src="{% static 'images/04.jpg' %} ">
+                </div>
+                <div class="col-4">
+                    <img src="{% static 'images/03.jpg' %} ">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="second-page3 d-flex flex-column   justify-content-center align-items-center">
+        <div class="row   ">
+            <div class="col-6 offset-3 ">
+                <h1 class="second-page3-text">What We Do</h1>
+                <img class="second-page3-img " src="{% static 'images/png2.png' %}">
+                <p class="second-page3-text2 text-secondary">We don`t follow the `one size fits all` formula of
+                    conventional agencies. We know our clients` brands
+                    inside and out to create <span class="text-white">bespoke campaigns</span>that
+                    bring the <span class="text-white">brand story to life</span>,<span class="text-white">engage with consumers</span>
+                    and <span class="text-white">inspire the media</span> - we ensure brands are seen and heard in all the right places.
+                </p>
+                <button class="second-page3-btn ">Our Services</button>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/b5cc4ad5fd.js"></script>
+    <script src="{% static 'js/anime.min.js' %}"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/my.js' %}"></script>
+</body>
+
+</html>
